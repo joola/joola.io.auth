@@ -27,7 +27,8 @@
   },
   "main": "./lib/joola.io.auth",
   "dependencies": {
-    "winston": "*"
+    "joola.io.logger":"x",
+    "winston":"x"
   },
   "devDependencies": {
     "mocha-lcov-reporter": "0.x",
