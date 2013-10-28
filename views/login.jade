@@ -1,0 +1,19 @@
+doctype 5
+html.wf-ffmetaserifwebpro-n5-active.wf-ffmetaserifwebpro-n7-active.wf-ffmetawebpro-n4-active.wf-active(lang='en')
+  head
+    title joola.io | Login
+    link(rel='stylesheet', href='/assets/css/site.css')
+  body.login
+    div.login-wrapper
+      div.logo
+        div.logo-image
+      div.message #{reason}
+      div.inputs
+        form(action="/login", method="post", autocomplete="off")
+          input(type="hidden", name="redirect", value="/")
+          div.username
+            input.txt-username(type="text", name="username", placeholder="Username")
+          div.password
+            input.txt-password(type="password", name="password", placeholder="Password")
+          div.control
+          button.login(type="submit") Login 
